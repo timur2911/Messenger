@@ -1,0 +1,50 @@
+﻿<Window x:Class="FinalProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <DockPanel>
+            <materialDesign:PopupBox
+      DockPanel.Dock="Right"
+                VerticalAlignment="Top"
+      PlacementMode="BottomAndAlignRightEdges">
+                <ListBox>
+                    <ListBoxItem>
+                        Hello World
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        Nice Popup
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        Goodbye.
+                    </ListBoxItem>
+                </ListBox>
+            </materialDesign:PopupBox>
+            <StackPanel
+                Background="Aquamarine"
+      Orientation="Horizontal">
+                <ToggleButton VerticalAlignment="Top"
+        Style="{DynamicResource MaterialDesignHamburgerToggleButton}" />
+                <TextBlock
+                    FontSize ="25"
+        VerticalAlignment="Top"
+        Margin="16 0 0 0">
+      Cars Catalog
+                </TextBlock>
+            </StackPanel>
+        </DockPanel>
+
+    </Grid>
+</Window>
